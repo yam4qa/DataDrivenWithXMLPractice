@@ -1,2 +1,3 @@
 hello 
 im here to push into local braanch
+im here to pull from cloud to local with 'git pull origin master' command staying in master
