@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [regression]">
+  <test name="AddNewAccount(failed)">
+    <parameter name="password" value="abc123"/>
+    <parameter name="itemName" value="docker"/>
+    <parameter name="invalidUsername" value="lsdjflsdjfljsdlfj"/>
+    <parameter name="balance" value="30000"/>
+    <parameter name="accountTitle" value="Boat Loan"/>
+    <parameter name="price" value="29.99"/>
+    <parameter name="qty" value="5"/>
+    <parameter name="description" value="Boat Money"/>
+    <parameter name="discount" value="10"/>
+    <parameter name="username" value="techfiosdemo@gmail.com"/>
+    <classes>
+      <class name="test.NewSalesInvoiceTest">
+        <methods>
+          <include name="OpenANewAccount" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.NewSalesInvoiceTest -->
+    </classes>
+  </test> <!-- AddNewAccount(failed) -->
+</suite> <!-- Failed suite [regression] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="password" value="abc123"/>
+  <parameter name="balance" value="30000"/>
+  <parameter name="accountTitle" value="Boat Loan"/>
+  <parameter name="description" value="Boat Money"/>
+  <parameter name="username" value="techfiosdemo@gmail.com"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.NewAccountTest">
+        <methods>
+          <include name="OpenANewAccount" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.NewAccountTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

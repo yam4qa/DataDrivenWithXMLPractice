@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression">
+	<test name="AddNewAccount">
+		<parameter name="username" value="techfiosdemo@gmail.com" />
+		<parameter name="password" value="abc123" />
+		<parameter name="invalidUsername" value="lsdjflsdjfljsdlfj" />
+		<parameter name="accountTitle" value="Boat Loan" />
+		<parameter name="description" value="Boat Money" />
+		<parameter name="balance" value="30000" />
+		
+		<parameter name="discount" value="10" />
+		<parameter name="itemName" value="docker" />
+		<parameter name="qty" value="5" />
+		<parameter name="price" value="29.99" />
+		<classes>
+<!--			<class name="test.NewAccountTest" /> -->
+			<class name="test.NewSalesInvoiceTest" />
+		</classes>
+	</test>
+</suite>
